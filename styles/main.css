@@ -41,10 +41,20 @@ footer {
   justify-content: center;
 }
 
+/*--Footer Stylings--*/
+
 .articleLink {
   width: 200px;
   height: 200px;
   background-color: burlywood;
+}
+
+.articleCover {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  opacity: .2;
 }
 
 .articleImage {
