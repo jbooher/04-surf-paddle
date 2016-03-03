@@ -9,8 +9,20 @@ body {
 
 header {
   width: 100%;
-  height: 200px;
-  background-color: darkgoldenrod;
+  height: 300px;
+  /*background-image: url(../images/walkingDeadHeader.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+.heading {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+header img {
+  width: 100%;
 }
 
 .content {
@@ -24,4 +36,18 @@ footer {
   width: 100%;
   height: 200px;
   background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.articleLink {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+}
+
+.articleImage {
+  width: 200px;
+  height: 200px;
 }
