@@ -16,6 +16,15 @@ li {
   display: inline-block;
 }
 
+.icon {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  float: left;
+  margin: 0 0 0 10px;
+}
+
 .imgCover {
   background: linear-gradient(to bottom right, #990000 60%, rgba(255, 0, 0, 0));
   position: absolute;
@@ -45,10 +54,12 @@ header {
 
 header a {
   color: white;
+  transition: color 1s;
 }
 
 header a:hover {
-
+  color: #990000;
+  transition: color 1s;
 }
 
 header .imgCover {
@@ -56,24 +67,22 @@ header .imgCover {
   height: 500px;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  float: left;
-  margin: 0 0 0 10px;
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading .name {
+  flex-grow: 2;
 }
 
 .heading h1 {
   margin: 10px 0 0 10px;
-  float: left;
 }
 
 .heading nav {
   text-transform: uppercase;
   margin: 10px 0 0 0;
-  float: right;
 }
 
 .heading ul li {
@@ -143,4 +152,10 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.footerInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
