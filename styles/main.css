@@ -1,5 +1,9 @@
-body {
+body, h1, h2, ul {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -13,43 +17,92 @@ li {
 }
 
 .imgCover {
-  background-color: red;
+  background: linear-gradient(to bottom right, #990000 60%, rgba(255, 0, 0, 0));
   position: absolute;
-  opacity: .2;
+  opacity: .6;
   transition: opacity 1s;
 }
 
 .imgCover:hover {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 
-.pageContainer {
-  display: flex;
-  flex-direction: column;
-}
+/*--Heading Styles--*/
 
 header {
   width: 100%;
-  height: 300px;
+  height: 500px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px 5px #3c3c3c;
   position: relative;
   color: white;
+  background-color: rgba(153, 0, 0, .6);
+  background-image: url(../images/walkingDeadHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+
 }
 
 header .imgCover {
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 
-.heading {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.icon {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  float: left;
+  margin: 0 0 0 10px;
 }
 
-header img {
+.heading h1 {
+  margin: 10px 0 0 10px;
+  float: left;
+}
+
+.heading nav {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+  float: right;
+}
+
+.heading ul li {
+  border-right: 1px solid #000;
+  padding: 5px;
+}
+
+.heading ul li:last-child {
+  border-right: none;
+}
+
+.hero {
   width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
 }
+
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/*--Content Stylings--*/
 
 .content {
   width: 80%;
