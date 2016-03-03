@@ -37,6 +37,20 @@ li {
   transition: opacity 2s;
 }
 
+nav {
+  text-transform: uppercase;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  border-right: 1px solid #000;
+  padding: 5px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
 /*--Heading Styles--*/
 
 header {
@@ -52,12 +66,12 @@ header {
   background-size: cover;
 }
 
-header a {
+header a, footer a {
   color: white;
   transition: color 1s;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
   color: #990000;
   transition: color 1s;
 }
@@ -65,6 +79,7 @@ header a:hover {
 header .imgCover {
   width: 100%;
   height: 500px;
+  position: absolute;
 }
 
 .heading {
@@ -78,20 +93,6 @@ header .imgCover {
 
 .heading h1 {
   margin: 10px 0 0 10px;
-}
-
-.heading nav {
-  text-transform: uppercase;
-  margin: 10px 0 0 0;
-}
-
-.heading ul li {
-  border-right: 1px solid #000;
-  padding: 5px;
-}
-
-.heading ul li:last-child {
-  border-right: none;
 }
 
 .hero {
@@ -120,16 +121,16 @@ header .imgCover {
   margin: 0 auto;
 }
 
+/*--Footer Stylings--*/
+
 footer {
   width: 100%;
   height: 200px;
-  background-color: blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: Helvetica;
 }
-
-/*--Footer Stylings--*/
 
 .articleLink {
   width: 200px;
@@ -156,6 +157,23 @@ footer {
 
 .footerInfo {
   width: 100%;
+  background-color: #1a1a1a;
   display: flex;
   justify-content: space-between;
+  height: 100px;
+  border-top: 5px solid #990000;
+}
+
+.copyright {
+  flex-grow: 2;
+  margin: auto 0 auto 200px;
+  color: #fff;
+}
+
+.copyright img {
+  margin-right: 10px;
+}
+
+.footerNav {
+  margin: auto 200px auto 0;
 }
