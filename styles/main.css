@@ -62,7 +62,7 @@ q:after {
 
 nav {
   text-transform: uppercase;
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@ header {
   height: 500px;
   position: relative;
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,
-                                                       rgba(0, 0, 0, 0.75)),
+                                                 rgba(0, 0, 0, 0.75)),
                                                        url(../images/walkingDeadHeader.jpg);
   color: #cfcfcf;
   background-repeat: no-repeat;
@@ -112,11 +112,10 @@ header .imgCover {
 
 .heading {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .name {
-  flex-grow: 2;
   margin:  10px 0 0 10px;
 }
 
@@ -193,7 +192,7 @@ footer {
 
 footer h3 {
   text-align: center;
-  margin: 10px 0;
+  font-size: 2rem;
 }
 
 .articleBar {
@@ -228,28 +227,27 @@ footer h3 {
 
 .footerInfo {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #2b2b2b;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   border-top: 5px solid #0a0a0a;
+  justify-content: space-around;
 }
 
 .copyright {
-  flex-grow: 2;
-  margin: auto 0 auto 200px;
   color: #fff;
 }
 
 .copyright > p {
   display: inline-block;
   vertical-align: top;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .copyright img {
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .footerNav {
-  margin: auto 200px auto 0;
+  /*margin: auto 200px auto 0;*/
 }
