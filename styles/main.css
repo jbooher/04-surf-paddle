@@ -105,12 +105,6 @@ header a:hover, footer a:hover {
   transition: color 1s;
 }
 
-header .imgCover {
-  width: 100%;
-  height: 500px;
-  position: absolute;
-}
-
 .heading {
   display: flex;
   justify-content: space-around;
@@ -196,6 +190,8 @@ article p {
   margin-left: 10px;
 }
 
+/*--Right Column Styling--*/
+
 .sidebar {
   width: 40%;
   display: flex;
@@ -263,12 +259,14 @@ footer h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #1a1a1a;
 }
 
 .articleLink {
   width: 200px;
   height: 200px;
-  color: white;
+  color: #fafafa;
   position: relative;
 }
 
@@ -299,7 +297,7 @@ footer h3 {
 }
 
 .copyright {
-  color: #fff;
+  color: #cacaca;
 }
 
 .copyright > p {
@@ -310,10 +308,6 @@ footer h3 {
 
 .copyright img {
   margin: 10px;
-}
-
-.footerNav {
-  /*margin: auto 200px auto 0;*/
 }
 
 @media(max-width: 980px) {
