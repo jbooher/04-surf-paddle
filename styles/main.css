@@ -114,22 +114,17 @@ header .imgCover {
 .heading {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .name {
   margin:  10px 0 0 10px;
-}
-
-.name .icon {
-  margin: 5px 0 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .name h1 {
-  display: inline-block;
-  height: 35px;
-  width: 350px;
-  vertical-align: top;
-  margin: 20px 0 0 10px;
+  margin-left: 10px;
 }
 
 .hero {
