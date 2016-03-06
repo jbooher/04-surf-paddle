@@ -3,10 +3,6 @@ body, h1, h2, ul, footer, p, h3 {
   font-family: 'Orbitron', sans-serif;
 }
 
-header, footer {
-  /*text-shadow: 2px 2px 5px #3c3c3c;*/
-}
-
 a {
   text-decoration: none;
 }
